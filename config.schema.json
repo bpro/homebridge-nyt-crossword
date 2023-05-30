@@ -1,5 +1,5 @@
 {
-  "pluginAlias": "ExampleHomebridgePlugin",
+  "pluginAlias": "NytCrossword",
   "pluginType": "platform",
   "singular": true,
   "schema": {
@@ -9,7 +9,25 @@
         "title": "Name",
         "type": "string",
         "required": true,
-        "default": "Example Dynamic Platform"
+        "default": "NytCrossword"
+      },
+      "subscriberId": {
+        "title": "Subscriber ID",
+        "type": "string",
+        "required": true,
+        "default": ""
+      },
+      "streakAlertWarningMinutes": {
+        "title": "Streak Alert Warning Minutes",
+        "type": "integer",
+        "required": true,
+        "default": 240
+      },
+      "streakAlertUpdateSeconds": {
+        "title": "Streak Alert Update Seconds",
+        "type": "integer",
+        "required": true,
+        "default": 30
       }
     }
   }
